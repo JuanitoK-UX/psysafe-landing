@@ -1,0 +1,15 @@
+PSYSAFE v8 — Enlace de sesión y nueva reserva mejorada
+
+Cambios de esta versión:
+1. El correo de confirmación incluye una fila interactiva "Enlace a videollamada" o "Enlace a llamada", según la modalidad elegida.
+2. El flujo "Reservar otra sesión" dentro del espacio privado ahora tiene dos pasos:
+   - Selección visual del profesional mediante cuatro cards horizontales con foto, nombre, título y especialidad.
+   - Confirmación del profesional y selección posterior de modalidad, fecha y hora.
+3. La ubicación de la interfaz de nueva reserva dentro del dashboard se conserva sin cambios.
+
+El enlace de llamada es visual en esta versión y está preparado para conectarse posteriormente a una URL real.
+
+ACTUALIZACIÓN V9
+- El botón "Cerrar sesión" del espacio privado ahora abre una ventana de confirmación.
+- La sesión solo se cierra al confirmar "Sí, cerrar sesión".
+- La opción "No, permanecer aquí" conserva el dashboard abierto.

@@ -1,0 +1,27 @@
+PSYSAFE — Integración opcional de correo
+
+La plataforma funciona sin backend en modo demostración y muestra vistas previas de los correos.
+
+Para enviar correos reales, configure en el HTML la variable:
+window.PSYSAFE_EMAIL_ENDPOINT = "https://su-endpoint-seguro.example/api/email";
+
+El endpoint debe aceptar POST JSON con uno de estos formatos:
+
+1) Confirmación de cita
+{
+  "kind": "appointment",
+  "to": "correo del usuario",
+  "alias": "alias",
+  "appointment": { ... }
+}
+
+2) Credenciales
+{
+  "kind": "credentials",
+  "to": "correo del usuario",
+  "alias": "alias",
+  "userId": "PSY-XXXXXX",
+  "accessCode": "123456"
+}
+
+IMPORTANTE: no coloque claves privadas de servicios de correo dentro del HTML. Las credenciales deben permanecer en el backend o función serverless.
